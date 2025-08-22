@@ -1,0 +1,3010 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الزيات للإنتاج الداجني - كتالوج الأدوية البيطرية</title>
+    <meta name="description" content="متخصصون في بيع الأعلاف والأدوية البيطرية المستوردة وتربية الدواجن البيضاء">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="data:application/json,{%22name%22:%22شركة الزيات للإنتاج الداجني%22,%22short_name%22:%22الزيات%22,%22start_url%22:%22/%22,%22display%22:%22standalone%22,%22background_color%22:%22%23ffffff%22,%22theme_color%22:%22%232563eb%22,%22lang%22:%22ar%22,%22dir%22:%22rtl%22,%22icons%22:[{%22src%22:%22data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐔%3C/text%3E%3C/svg%3E%22,%22sizes%22:%22192x192%22,%22type%22:%22image/svg+xml%22}]}">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="شركة الزيات">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #16a34a;
+            --accent-color: #f59e0b;
+            --danger-color: #ef4444;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --border-color: #e2e8f0;
+            --text-muted: #64748b;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+            --header-height: 80px;
+        }
+
+        [data-theme="dark"] {
+            --light-color: #0f172a;
+            --dark-color: #f8fafc;
+            --border-color: #334155;
+            --text-muted: #94a3b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background: var(--light-color);
+            transition: var(--transition);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow-lg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .company-info h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .company-info p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .nav-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .search-container {
+            position: relative;
+        }
+        
+        .search-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius);
+            padding: 0.5rem 1rem;
+            color: white;
+            width: 300px;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+        
+        .search-box:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .search-box::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-success {
+            background: var(--success-color);
+            color: white;
+        }
+        
+        .btn-danger {
+            background: var(--danger-color);
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius);
+            color: white;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        
+        /* Theme Toggle */
+        .theme-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        [data-theme="dark"] .stats-section {
+            background: #1e293b;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            background: var(--light-color);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            margin: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        .category-group {
+            margin-bottom: 3rem;
+        }
+        
+        .group-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        [data-theme="dark"] .category-card {
+            background: #1e293b;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+        
+        .category-card.active {
+            border-color: var(--primary-color);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(22, 163, 74, 0.1));
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .category-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-count {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Products Section */
+        .products-section {
+            margin: 3rem 0;
+        }
+        
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .products-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-select {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            background: white;
+            font-family: inherit;
+        }
+        
+        [data-theme="dark"] .filter-select {
+            background: #1e293b;
+            color: var(--dark-color);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+        
+        [data-theme="dark"] .product-card {
+            background: #1e293b;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: var(--light-color);
+        }
+        
+        .product-placeholder {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-color);
+            color: var(--text-muted);
+            font-size: 3rem;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+            line-height: 1.4;
+        }
+        
+        .product-description {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .product-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .meta-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .meta-value {
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .price {
+            background: linear-gradient(135deg, var(--success-color), #059669);
+            color: white;
+        }
+        
+        .stock {
+            background: var(--light-color);
+            color: var(--dark-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .stock.low {
+            background: linear-gradient(135deg, var(--warning-color), #d97706);
+            color: white;
+        }
+        
+        .stock.out {
+            background: linear-gradient(135deg, var(--danger-color), #dc2626);
+            color: white;
+        }
+        
+        .expiry {
+            background: var(--light-color);
+            color: var(--dark-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .expiry.warning {
+            background: linear-gradient(135deg, var(--warning-color), #d97706);
+            color: white;
+        }
+        
+        .expiry.danger {
+            background: linear-gradient(135deg, var(--danger-color), #dc2626);
+            color: white;
+        }
+        
+        .product-categories {
+            display: flex;
+            gap: 0.25rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        .category-tag {
+            background: var(--light-color);
+            color: var(--primary-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+        }
+        
+        .product-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        /* Modals */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        
+        [data-theme="dark"] .modal-content {
+            background: #1e293b;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            padding: 0.25rem;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .close-btn:hover {
+            background: var(--light-color);
+            color: var(--dark-color);
+        }
+        
+        /* Forms */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-family: inherit;
+            transition: var(--transition);
+            background: white;
+        }
+        
+        [data-theme="dark"] .form-input,
+        [data-theme="dark"] .form-select,
+        [data-theme="dark"] .form-textarea {
+            background: #0f172a;
+            color: var(--dark-color);
+        }
+        
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background: var(--light-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .checkbox-item:hover {
+            background: rgba(37, 99, 235, 0.1);
+        }
+        
+        .checkbox-item input[type="checkbox"]:checked + span {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin: 0;
+        }
+        
+        /* Image Upload */
+        .image-upload {
+            border: 2px dashed var(--border-color);
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .image-upload:hover {
+            border-color: var(--primary-color);
+            background: rgba(37, 99, 235, 0.05);
+        }
+        
+        .image-upload.dragover {
+            border-color: var(--primary-color);
+            background: rgba(37, 99, 235, 0.1);
+        }
+        
+        .image-preview {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: var(--radius);
+            margin-top: 1rem;
+        }
+        
+        /* Admin Panel */
+        .admin-panel {
+            background: white;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent-color);
+        }
+        
+        [data-theme="dark"] .admin-panel {
+            background: #1e293b;
+        }
+        
+        .admin-controls {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+        
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--border-color);
+        }
+        
+        /* Search Suggestions */
+        .search-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        
+        [data-theme="dark"] .search-suggestions {
+            background: #1e293b;
+        }
+        
+        .suggestion-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .suggestion-item:hover {
+            background: var(--light-color);
+        }
+        
+        .suggestion-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* Notifications */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+            color: white;
+            font-weight: 600;
+            z-index: 3000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.success {
+            background: var(--success-color);
+        }
+        
+        .notification.error {
+            background: var(--danger-color);
+        }
+        
+        .notification.warning {
+            background: var(--warning-color);
+        }
+        
+        .notification.info {
+            background: var(--primary-color);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+        
+        [data-theme="dark"] .footer {
+            background: #0f172a;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .footer-section p,
+        .footer-section li {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid #374151;
+            opacity: 0.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .search-box {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .products-controls {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-controls {
+                flex-direction: column;
+            }
+            
+            .btn {
+                justify-content: center;
+            }
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Print Styles */
+        @media print {
+            .header,
+            .footer,
+            .admin-panel,
+            .btn,
+            .modal {
+                display: none !important;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .product-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+        
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #000080;
+                --secondary-color: #006400;
+                --border-color: #000000;
+            }
+        }
+        
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">🐔</div>
+                    <div class="company-info">
+                        <h1 data-translate="site_name">شركة الزيات للإنتاج الداجني</h1>
+                        <p data-translate="site_description">متخصصون في بيع الأعلاف والأدوية البيطرية المستوردة وتربية الدواجن البيضاء</p>
+                    </div>
+                </div>
+                
+                <div class="nav-controls">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-box" 
+                               data-translate-placeholder="search_placeholder"
+                               placeholder="ابحث في الأدوية والمنتجات...">
+                        <div id="searchSuggestions" class="search-suggestions"></div>
+                    </div>
+                    
+                    <select id="languageSelect" class="language-selector">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                    </select>
+                    
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <button class="btn btn-primary" id="adminBtn">
+                        <i class="fas fa-cog"></i>
+                        <span data-translate="admin_panel">لوحة الإدارة</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Admin Panel -->
+            <div id="adminPanel" class="admin-panel" style="display: none;">
+                <h3><i class="fas fa-shield-alt"></i> <span data-translate="admin_panel">لوحة الإدارة</span></h3>
+                <div class="admin-controls">
+                    <button class="btn btn-success" id="addProductBtn">
+                        <i class="fas fa-plus"></i>
+                        <span data-translate="add_product">إضافة دواء جديد</span>
+                    </button>
+                    <button class="btn btn-primary" id="manageDataBtn">
+                        <i class="fas fa-database"></i>
+                        <span data-translate="manage_data">إدارة البيانات</span>
+                    </button>
+                    <button class="btn btn-secondary" id="reportsBtn">
+                        <i class="fas fa-chart-bar"></i>
+                        <span data-translate="reports">التقارير</span>
+                    </button>
+                    <button class="btn btn-secondary" id="settingsBtn">
+                        <i class="fas fa-cog"></i>
+                        <span data-translate="settings">الإعدادات</span>
+                    </button>
+                    <button class="btn btn-danger" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span data-translate="logout">تسجيل الخروج</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--primary-color);">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--primary-color);" id="totalProducts">0</div>
+                        <div class="stat-label" data-translate="total_products">إجمالي المنتجات</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--warning-color);">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--warning-color);" id="lowStockProducts">0</div>
+                        <div class="stat-label" data-translate="low_stock">مخزون منخفض</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--danger-color);">
+                            <i class="fas fa-calendar-times"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--danger-color);" id="nearExpiryProducts">0</div>
+                        <div class="stat-label" data-translate="near_expiry">قارب على الانتهاء</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--success-color);">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--success-color);" id="activeCategories">0</div>
+                        <div class="stat-label" data-translate="active_categories">التصنيفات النشطة</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <h2 class="section-title" data-translate="product_categories">تصنيفات المنتجات</h2>
+                <div id="categoriesContainer"></div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="products-section">
+                <div class="products-header">
+                    <h2 class="section-title" id="productsTitle" data-translate="all_products">جميع المنتجات</h2>
+                    <div class="products-controls">
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all" data-translate="all_categories">جميع التصنيفات</option>
+                        </select>
+                        <select id="sortSelect" class="filter-select">
+                            <option value="name" data-translate="sort_name">ترتيب حسب الاسم</option>
+                            <option value="price" data-translate="sort_price">ترتيب حسب السعر</option>
+                            <option value="stock" data-translate="sort_stock">ترتيب حسب المخزون</option>
+                            <option value="expiry" data-translate="sort_expiry">ترتيب حسب الصلاحية</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="productsGrid" class="products-grid"></div>
+                
+                <div id="emptyState" class="empty-state" style="display: none;">
+                    <i class="fas fa-pills"></i>
+                    <h3 data-translate="no_products_title">لا توجد منتجات</h3>
+                    <p data-translate="no_products_description">لم يتم العثور على منتجات تطابق المعايير المحددة</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="company_name">شركة الزيات للإنتاج الداجني</h3>
+                    <p data-translate="company_description">نحن متخصصون في توفير أفضل الأعلاف والأدوية البيطرية المستوردة عالية الجودة لضمان صحة وإنتاجية الدواجن.</p>
+                    <p><i class="fas fa-phone"></i> +966 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@zayyat.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="quick_links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="home">الصفحة الرئيسية</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="all_products">جميع المنتجات</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="about_us">من نحن</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="contact_us">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="main_categories">التصنيفات الرئيسية</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="supplements">المنشطات والمكملات</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="treatments">الأدوية العلاجية</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="antibiotics">المضادات الحيوية</span></a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> <span data-translate="vitamins">الفيتامينات</span></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-translate="follow_us">تابعنا</h3>
+                    <p data-translate="stay_updated">ابق على اطلاع دائم بأحدث منتجاتنا ونصائحنا</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" style="font-size: 1.5rem; color: var(--primary-color);"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="font-size: 1.5rem; color: var(--primary-color);"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="font-size: 1.5rem; color: var(--primary-color);"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="font-size: 1.5rem; color: var(--primary-color);"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> <span data-translate="company_name">شركة الزيات للإنتاج الداجني</span>. <span data-translate="all_rights_reserved">جميع الحقوق محفوظة</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title" data-translate="admin_login">تسجيل دخول الإدارة</h3>
+                <button class="close-btn" onclick="closeModal('loginModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" data-translate="username">اسم المستخدم</label>
+                    <input type="text" id="loginUsername" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-translate="password">كلمة المرور</label>
+                    <input type="password" id="loginPassword" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span data-translate="login">دخول</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="productModalTitle" data-translate="add_product">إضافة دواء جديد</h3>
+                <button class="close-btn" onclick="closeModal('productModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="productForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" data-translate="product_name">اسم الدواء</label>
+                        <input type="text" id="productName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-translate="product_name_en">اسم الدواء (إنجليزي)</label>
+                        <input type="text" id="productNameEn" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-translate="price">السعر (ر.س)</label>
+                        <input type="number" id="productPrice" class="form-input" step="0.01" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-translate="stock">المخزون</label>
+                        <input type="number" id="productStock" class="form-input" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-translate="expiry_date">تاريخ الصلاحية</label>
+                        <input type="date" id="productExpiry" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" data-translate="batch_number">رقم الدفعة</label>
+                        <input type="text" id="productBatch" class="form-input">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" data-translate="description">الوصف</label>
+                    <textarea id="productDescription" class="form-textarea" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="description_en">الوصف (إنجليزي)</label>
+                    <textarea id="productDescriptionEn" class="form-textarea" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="notes">الملاحظات</label>
+                    <textarea id="productNotes" class="form-textarea" rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="product_image">صورة الدواء</label>
+                    <div class="image-upload" id="imageUpload">
+                        <i class="fas fa-cloud-upload-alt" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <p data-translate="upload_image">اضغط أو اسحب الصورة هنا</p>
+                        <input type="file" id="productImage" accept="image/*" style="display: none;">
+                    </div>
+                    <img id="imagePreview" class="image-preview" style="display: none;">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="categories">التصنيفات</label>
+                    <div class="checkbox-group" id="categoriesCheckboxes"></div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 2rem;">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('productModal')">
+                        <span data-translate="cancel">إلغاء</span>
+                    </button>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i>
+                        <span data-translate="save">حفظ</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productDetailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="productDetailsTitle" data-translate="product_details">تفاصيل المنتج</h3>
+                <button class="close-btn" onclick="closeModal('productDetailsModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="productDetailsContent"></div>
+        </div>
+    </div>
+
+    <!-- Data Management Modal -->
+    <div class="modal" id="dataModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3 class="modal-title" data-translate="data_management">إدارة البيانات</h3>
+                <button class="close-btn" onclick="closeModal('dataModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <button class="btn btn-primary" onclick="exportData()">
+                    <i class="fas fa-download"></i>
+                    <span data-translate="export_data">تصدير البيانات</span>
+                </button>
+                <label class="btn btn-secondary" style="text-align: center; cursor: pointer;">
+                    <i class="fas fa-upload"></i>
+                    <span data-translate="import_data">استيراد البيانات</span>
+                    <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(this)">
+                </label>
+                <button class="btn btn-warning" onclick="createSampleData()">
+                    <i class="fas fa-magic"></i>
+                    <span data-translate="create_sample">إنشاء بيانات تجريبية</span>
+                </button>
+                <button class="btn btn-danger" onclick="resetData()">
+                    <i class="fas fa-trash"></i>
+                    <span data-translate="reset_data">إعادة تعيين البيانات</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reports Modal -->
+    <div class="modal" id="reportsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" data-translate="reports_analytics">التقارير والإحصائيات</h3>
+                <button class="close-btn" onclick="closeModal('reportsModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="reportsContent"></div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h3 class="modal-title" data-translate="settings">الإعدادات</h3>
+                <button class="close-btn" onclick="closeModal('settingsModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="settingsForm">
+                <div class="form-group">
+                    <label class="form-label" data-translate="admin_password">كلمة مرور الإدارة</label>
+                    <input type="password" id="newAdminPassword" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" data-translate="low_stock_threshold">حد انخفاض المخزون</label>
+                    <input type="number" id="lowStockThreshold" class="form-input" min="0" value="10">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="near_expiry_days">أيام قرب انتهاء الصلاحية</label>
+                    <input type="number" id="nearExpiryDays" class="form-input" min="1" value="30">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="primary_color">اللون الأساسي</label>
+                    <input type="color" id="primaryColor" class="form-input" value="#2563eb">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" data-translate="secondary_color">اللون الثانوي</label>
+                    <input type="color" id="secondaryColor" class="form-input" value="#16a34a">
+                </div>
+
+                <div style="display: flex; gap: 1rem; justify-content: flex-end; margin-top: 2rem;">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('settingsModal')">
+                        <span data-translate="cancel">إلغاء</span>
+                    </button>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i>
+                        <span data-translate="save_settings">حفظ الإعدادات</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ============== Translation System ==============
+        const translations = {
+            ar: {
+                site_name: 'شركة الزيات للإنتاج الداجني',
+                site_description: 'متخصصون في بيع الأعلاف والأدوية البيطرية المستوردة وتربية الدواجن البيضاء',
+                search_placeholder: 'ابحث في الأدوية والمنتجات...',
+                admin_panel: 'لوحة الإدارة',
+                add_product: 'إضافة دواء جديد',
+                manage_data: 'إدارة البيانات',
+                reports: 'التقارير',
+                settings: 'الإعدادات',
+                logout: 'تسجيل الخروج',
+                total_products: 'إجمالي المنتجات',
+                low_stock: 'مخزون منخفض',
+                near_expiry: 'قارب على الانتهاء',
+                active_categories: 'التصنيفات النشطة',
+                product_categories: 'تصنيفات المنتجات',
+                all_products: 'جميع المنتجات',
+                all_categories: 'جميع التصنيفات',
+                sort_name: 'ترتيب حسب الاسم',
+                sort_price: 'ترتيب حسب السعر',
+                sort_stock: 'ترتيب حسب المخزون',
+                sort_expiry: 'ترتيب حسب الصلاحية',
+                no_products_title: 'لا توجد منتجات',
+                no_products_description: 'لم يتم العثور على منتجات تطابق المعايير المحددة',
+                company_name: 'شركة الزيات للإنتاج الداجني',
+                company_description: 'نحن متخصصون في توفير أفضل الأعلاف والأدوية البيطرية المستوردة عالية الجودة لضمان صحة وإنتاجية الدواجن.',
+                quick_links: 'روابط سريعة',
+                home: 'الصفحة الرئيسية',
+                about_us: 'من نحن',
+                contact_us: 'اتصل بنا',
+                main_categories: 'التصنيفات الرئيسية',
+                supplements: 'المنشطات والمكملات',
+                treatments: 'الأدوية العلاجية',
+                antibiotics: 'المضادات الحيوية',
+                vitamins: 'الفيتامينات',
+                follow_us: 'تابعنا',
+                stay_updated: 'ابق على اطلاع دائم بأحدث منتجاتنا ونصائحنا',
+                all_rights_reserved: 'جميع الحقوق محفوظة',
+                admin_login: 'تسجيل دخول الإدارة',
+                username: 'اسم المستخدم',
+                password: 'كلمة المرور',
+                login: 'دخول',
+                product_name: 'اسم الدواء',
+                product_name_en: 'اسم الدواء (إنجليزي)',
+                price: 'السعر (ر.س)',
+                stock: 'المخزون',
+                expiry_date: 'تاريخ الصلاحية',
+                batch_number: 'رقم الدفعة',
+                description: 'الوصف',
+                description_en: 'الوصف (إنجليزي)',
+                notes: 'الملاحظات',
+                product_image: 'صورة الدواء',
+                upload_image: 'اضغط أو اسحب الصورة هنا',
+                categories: 'التصنيفات',
+                cancel: 'إلغاء',
+                save: 'حفظ',
+                product_details: 'تفاصيل المنتج',
+                data_management: 'إدارة البيانات',
+                export_data: 'تصدير البيانات',
+                import_data: 'استيراد البيانات',
+                create_sample: 'إنشاء بيانات تجريبية',
+                reset_data: 'إعادة تعيين البيانات',
+                reports_analytics: 'التقارير والإحصائيات',
+                admin_password: 'كلمة مرور الإدارة',
+                low_stock_threshold: 'حد انخفاض المخزون',
+                near_expiry_days: 'أيام قرب انتهاء الصلاحية',
+                primary_color: 'اللون الأساسي',
+                secondary_color: 'اللون الثانوي',
+                save_settings: 'حفظ الإعدادات'
+            },
+            en: {
+                site_name: 'Al-Zayyat Poultry Production Company',
+                site_description: 'Specialized in selling feeds, imported veterinary medicines and white poultry breeding',
+                search_placeholder: 'Search for medicines and products...',
+                admin_panel: 'Admin Panel',
+                add_product: 'Add New Medicine',
+                manage_data: 'Data Management',
+                reports: 'Reports',
+                settings: 'Settings',
+                logout: 'Logout',
+                total_products: 'Total Products',
+                low_stock: 'Low Stock',
+                near_expiry: 'Near Expiry',
+                active_categories: 'Active Categories',
+                product_categories: 'Product Categories',
+                all_products: 'All Products',
+                all_categories: 'All Categories',
+                sort_name: 'Sort by Name',
+                sort_price: 'Sort by Price',
+                sort_stock: 'Sort by Stock',
+                sort_expiry: 'Sort by Expiry',
+                no_products_title: 'No Products',
+                no_products_description: 'No products found matching the specified criteria',
+                company_name: 'Al-Zayyat Poultry Production Company',
+                company_description: 'We specialize in providing the best high-quality imported feeds and veterinary medicines to ensure poultry health and productivity.',
+                quick_links: 'Quick Links',
+                home: 'Home',
+                about_us: 'About Us',
+                contact_us: 'Contact Us',
+                main_categories: 'Main Categories',
+                supplements: 'Supplements & Enhancers',
+                treatments: 'Treatment Medicines',
+                antibiotics: 'Antibiotics',
+                vitamins: 'Vitamins',
+                follow_us: 'Follow Us',
+                stay_updated: 'Stay updated with our latest products and tips',
+                all_rights_reserved: 'All Rights Reserved',
+                admin_login: 'Admin Login',
+                username: 'Username',
+                password: 'Password',
+                login: 'Login',
+                product_name: 'Medicine Name',
+                product_name_en: 'Medicine Name (English)',
+                price: 'Price (SAR)',
+                stock: 'Stock',
+                expiry_date: 'Expiry Date',
+                batch_number: 'Batch Number',
+                description: 'Description',
+                description_en: 'Description (English)',
+                notes: 'Notes',
+                product_image: 'Product Image',
+                upload_image: 'Click or drag image here',
+                categories: 'Categories',
+                cancel: 'Cancel',
+                save: 'Save',
+                product_details: 'Product Details',
+                data_management: 'Data Management',
+                export_data: 'Export Data',
+                import_data: 'Import Data',
+                create_sample: 'Create Sample Data',
+                reset_data: 'Reset Data',
+                reports_analytics: 'Reports & Analytics',
+                admin_password: 'Admin Password',
+                low_stock_threshold: 'Low Stock Threshold',
+                near_expiry_days: 'Near Expiry Days',
+                primary_color: 'Primary Color',
+                secondary_color: 'Secondary Color',
+                save_settings: 'Save Settings'
+            }
+        };
+
+        // ============== Application State ==============
+        const AppState = {
+            products: [],
+            categories: {
+                supplements: [
+                    { id: 'liver-tonic', name_ar: 'منشط كبد', name_en: 'Liver Tonic', icon: 'fas fa-heart-pulse' },
+                    { id: 'growth-promoter', name_ar: 'منشط نمو', name_en: 'Growth Promoter', icon: 'fas fa-chart-line' },
+                    { id: 'feed-withdrawal', name_ar: 'سحب علف', name_en: 'Feed Withdrawal', icon: 'fas fa-pause' },
+                    { id: 'vitamins', name_ar: 'فيتامينات', name_en: 'Vitamins', icon: 'fas fa-pills' },
+                    { id: 'bronchodilator', name_ar: 'موسع شعب', name_en: 'Bronchodilator', icon: 'fas fa-lungs' },
+                    { id: 'injections', name_ar: 'حقن', name_en: 'Injections', icon: 'fas fa-syringe' },
+                    { id: 'immune-booster', name_ar: 'رافعات مناعة', name_en: 'Immune Booster', icon: 'fas fa-shield-alt' },
+                    { id: 'vaccines', name_ar: 'تحصينات', name_en: 'Vaccines', icon: 'fas fa-shield-virus' },
+                    { id: 'enzymes', name_ar: 'خمائر', name_en: 'Enzymes', icon: 'fas fa-atom' }
+                ],
+                treatments: [
+                    { id: 'coccidiosis', name_ar: 'كوكسيديا', name_en: 'Coccidiosis', icon: 'fas fa-bug' },
+                    { id: 'clostridial', name_ar: 'كولستريديا', name_en: 'Clostridial', icon: 'fas fa-bacterium' },
+                    { id: 'toxin-binder', name_ar: 'مضاد سموم', name_en: 'Toxin Binder', icon: 'fas fa-ban' },
+                    { id: 'kidney-flush', name_ar: 'غسيل كلوي', name_en: 'Kidney Flush', icon: 'fas fa-kidneys' }
+                ],
+                antibiotics: [
+                    { id: 'lincomycin', name_ar: 'لينكومايسين', name_en: 'Lincomycin', icon: 'fas fa-capsules' },
+                    { id: 'doxycycline', name_ar: 'دوكسيكلين', name_en: 'Doxycycline', icon: 'fas fa-capsules' },
+                    { id: 'enrofloxacin', name_ar: 'إنروفلوكساسين', name_en: 'Enrofloxacin', icon: 'fas fa-capsules' },
+                    { id: 'fosfomycin', name_ar: 'فوسفومايسين', name_en: 'Fosfomycin', icon: 'fas fa-capsules' },
+                    { id: 'ampicillin', name_ar: 'أمبيسلين', name_en: 'Ampicillin', icon: 'fas fa-capsules' },
+                    { id: 'tylosin', name_ar: 'تايلوزين', name_en: 'Tylosin', icon: 'fas fa-capsules' },
+                    { id: 'tilmicosin', name_ar: 'تيلميكوزين', name_en: 'Tilmicosin', icon: 'fas fa-capsules' },
+                    { id: 'erythromycin', name_ar: 'إرثرومايسين', name_en: 'Erythromycin', icon: 'fas fa-capsules' },
+                    { id: 'tylvalosin', name_ar: 'تلفالوسين', name_en: 'Tylvalosin', icon: 'fas fa-capsules' },
+                    { id: 'neomycin', name_ar: 'نيومايسين', name_en: 'Neomycin', icon: 'fas fa-capsules' },
+                    { id: 'amoxicillin', name_ar: 'أموكسيسلين', name_en: 'Amoxicillin', icon: 'fas fa-capsules' }
+                ]
+            },
+            currentCategory: 'all',
+            currentLanguage: 'ar',
+            isAuthenticated: false,
+            searchQuery: '',
+            sortBy: 'name',
+            currentProduct: null,
+            settings: {
+                adminPassword: 'admin123',
+                lowStockThreshold: 10,
+                nearExpiryDays: 30,
+                primaryColor: '#2563eb',
+                secondaryColor: '#16a34a'
+            }
+        };
+
+        // ============== Utility Functions ==============
+        function generateId() {
+            return Date.now().toString(36) + Math.random().toString(36).substr(2);
+        }
+
+        function formatPrice(price) {
+            return price ? `${parseFloat(price).toFixed(2)} ر.س` : 'غير محدد';
+        }
+
+        function formatDate(date) {
+            if (!date) return 'غير محدد';
+            return new Date(date).toLocaleDateString('ar-SA');
+        }
+
+        function getDaysUntilExpiry(expiryDate) {
+            if (!expiryDate) return null;
+            const today = new Date();
+            const expiry = new Date(expiryDate);
+            const diffTime = expiry - today;
+            return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        }
+
+        function getExpiryStatus(expiryDate) {
+            const days = getDaysUntilExpiry(expiryDate);
+            if (days === null) return 'normal';
+            if (days < 0) return 'expired';
+            if (days <= AppState.settings.nearExpiryDays) return 'warning';
+            return 'normal';
+        }
+
+        function getStockStatus(stock) {
+            if (stock === 0) return 'out';
+            if (stock <= AppState.settings.lowStockThreshold) return 'low';
+            return 'normal';
+        }
+
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `<i class="fas fa-${type === 'success' ? 'check' : type === 'error' ? 'times' : 'exclamation'}"></i> ${message}`;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => notification.classList.add('show'), 100);
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => document.body.removeChild(notification), 300);
+            }, 3000);
+        }
+
+        function sanitizeInput(input) {
+            const div = document.createElement('div');
+            div.textContent = input;
+            return div.innerHTML;
+        }
+
+        // ============== Local Storage Functions ==============
+        function saveData() {
+            try {
+                localStorage.setItem('zayyat_products', JSON.stringify(AppState.products));
+                localStorage.setItem('zayyat_settings', JSON.stringify(AppState.settings));
+                localStorage.setItem('zayyat_language', AppState.currentLanguage);
+                localStorage.setItem('zayyat_theme', document.documentElement.getAttribute('data-theme') || 'light');
+                return true;
+            } catch (error) {
+                console.error('Error saving data:', error);
+                showNotification('خطأ في حفظ البيانات', 'error');
+                return false;
+            }
+        }
+
+        function loadData() {
+            try {
+                const products = localStorage.getItem('zayyat_products');
+                const settings = localStorage.getItem('zayyat_settings');
+                const language = localStorage.getItem('zayyat_language');
+                const theme = localStorage.getItem('zayyat_theme');
+                
+                if (products) {
+                    AppState.products = JSON.parse(products);
+                }
+                
+                if (settings) {
+                    AppState.settings = { ...AppState.settings, ...JSON.parse(settings) };
+                }
+                
+                if (language) {
+                    AppState.currentLanguage = language;
+                    setLanguage(language);
+                }
+                
+                if (theme) {
+                    setTheme(theme);
+                }
+                
+                applySettings();
+                return true;
+            } catch (error) {
+                console.error('Error loading data:', error);
+                return false;
+            }
+        }
+
+        // ============== Language System ==============
+        function setLanguage(lang) {
+            AppState.currentLanguage = lang;
+            
+            // Update HTML attributes
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            
+            // Update language selector
+            document.getElementById('languageSelect').value = lang;
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update placeholders
+            document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-translate-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+            
+            saveData();
+        }
+
+        // ============== Theme System ==============
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            const themeIcon = document.querySelector('#themeToggle i');
+            if (themeIcon) {
+                themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+            saveData();
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        }
+
+        function applySettings() {
+            document.documentElement.style.setProperty('--primary-color', AppState.settings.primaryColor);
+            document.documentElement.style.setProperty('--secondary-color', AppState.settings.secondaryColor);
+        }
+
+        // ============== Modal Functions ==============
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // ============== Authentication ==============
+        function login(username, password) {
+            // Simple authentication - in production, use proper authentication
+            if (username === 'admin' && password === AppState.settings.adminPassword) {
+                AppState.isAuthenticated = true;
+                showAdminPanel();
+                closeModal('loginModal');
+                showNotification('تم تسجيل الدخول بنجاح');
+                return true;
+            } else {
+                showNotification('اسم المستخدم أو كلمة المرور غير صحيحة', 'error');
+                return false;
+            }
+        }
+
+        function logout() {
+            AppState.isAuthenticated = false;
+            hideAdminPanel();
+            showNotification('تم تسجيل الخروج بنجاح');
+        }
+
+        function showAdminPanel() {
+            document.getElementById('adminPanel').style.display = 'block';
+            renderProducts(); // Re-render to show admin controls
+        }
+
+        function hideAdminPanel() {
+            document.getElementById('adminPanel').style.display = 'none';
+            renderProducts(); // Re-render to hide admin controls
+        }
+
+        // ============== Category Functions ==============
+        function getAllCategories() {
+            return [
+                ...AppState.categories.supplements,
+                ...AppState.categories.treatments,
+                ...AppState.categories.antibiotics
+            ];
+        }
+
+        function getCategoryById(id) {
+            return getAllCategories().find(cat => cat.id === id);
+        }
+
+        function getCategoryName(id) {
+            const category = getCategoryById(id);
+            if (!category) return id;
+            const lang = AppState.currentLanguage;
+            return category[`name_${lang}`] || category.name_ar;
+        }
+
+        function renderCategories() {
+            const container = document.getElementById('categoriesContainer');
+            if (!container) return;
+
+            const groupTitles = {
+                supplements: AppState.currentLanguage === 'ar' ? 'المنشطات والمكملات' : 'Supplements & Enhancers',
+                treatments: AppState.currentLanguage === 'ar' ? 'الأدوية العلاجية' : 'Treatment Medicines',
+                antibiotics: AppState.currentLanguage === 'ar' ? 'المضادات الحيوية' : 'Antibiotics'
+            };
+
+            const groupIcons = {
+                supplements: 'fas fa-leaf',
+                treatments: 'fas fa-medkit',
+                antibiotics: 'fas fa-shield-virus'
+            };
+
+            let html = '';
+            
+            Object.keys(AppState.categories).forEach(groupKey => {
+                const categories = AppState.categories[groupKey];
+                
+                html += `
+                    <div class="category-group">
+                        <h3 class="group-title">
+                            <i class="${groupIcons[groupKey]}"></i>
+                            ${groupTitles[groupKey]}
+                        </h3>
+                        <div class="categories-grid">
+                `;
+                
+                categories.forEach(category => {
+                    const count = AppState.products.filter(p => p.categories.includes(category.id)).length;
+                    const isActive = AppState.currentCategory === category.id;
+                    const lang = AppState.currentLanguage;
+                    
+                    html += `
+                        <div class="category-card ${isActive ? 'active' : ''}" 
+                             onclick="filterByCategory('${category.id}')">
+                            <div class="category-icon">
+                                <i class="${category.icon}"></i>
+                            </div>
+                            <div class="category-name">
+                                ${category[`name_${lang}`] || category.name_ar}
+                            </div>
+                            <div class="category-count">
+                                ${count} ${AppState.currentLanguage === 'ar' ? 'منتج' : 'products'}
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+            
+            // Update category filter dropdown
+            updateCategoryFilter();
+        }
+
+        function updateCategoryFilter() {
+            const filterSelect = document.getElementById('categoryFilter');
+            if (!filterSelect) return;
+
+            const allOption = filterSelect.querySelector('option[value="all"]');
+            let html = allOption ? allOption.outerHTML : '<option value="all">جميع التصنيفات</option>';
+            
+            getAllCategories().forEach(category => {
+                const lang = AppState.currentLanguage;
+                const name = category[`name_${lang}`] || category.name_ar;
+                html += `<option value="${category.id}">${name}</option>`;
+            });
+            
+            filterSelect.innerHTML = html;
+            filterSelect.value = AppState.currentCategory;
+        }
+
+        function filterByCategory(categoryId) {
+            AppState.currentCategory = categoryId;
+            renderCategories();
+            renderProducts();
+            
+            // Update title
+            const title = document.getElementById('productsTitle');
+            if (title) {
+                if (categoryId === 'all') {
+                    title.textContent = AppState.currentLanguage === 'ar' ? 'جميع المنتجات' : 'All Products';
+                } else {
+                    const categoryName = getCategoryName(categoryId);
+                    title.textContent = AppState.currentLanguage === 'ar' ? 
+                        `أدوية ${categoryName}` : `${categoryName} Medicines`;
+                }
+            }
+        }
+
+        // ============== Product Functions ==============
+        function getFilteredProducts() {
+            let filtered = AppState.products.filter(product => {
+                // Category filter
+                const matchesCategory = AppState.currentCategory === 'all' || 
+                                      product.categories.includes(AppState.currentCategory);
+                
+                // Search filter
+                const searchTerm = AppState.searchQuery.toLowerCase();
+                const matchesSearch = !searchTerm || 
+                                    product.name_ar.toLowerCase().includes(searchTerm) ||
+                                    (product.name_en && product.name_en.toLowerCase().includes(searchTerm)) ||
+                                    (product.description_ar && product.description_ar.toLowerCase().includes(searchTerm)) ||
+                                    (product.description_en && product.description_en.toLowerCase().includes(searchTerm));
+                
+                return matchesCategory && matchesSearch;
+            });
+
+            // Sort products
+            filtered.sort((a, b) => {
+                switch (AppState.sortBy) {
+                    case 'name':
+                        const nameA = a[`name_${AppState.currentLanguage}`] || a.name_ar;
+                        const nameB = b[`name_${AppState.currentLanguage}`] || b.name_ar;
+                        return nameA.localeCompare(nameB, AppState.currentLanguage);
+                    case 'price':
+                        return (parseFloat(a.price) || 0) - (parseFloat(b.price) || 0);
+                    case 'stock':
+                        return (parseInt(b.stock) || 0) - (parseInt(a.stock) || 0);
+                    case 'expiry':
+                        if (!a.expiry && !b.expiry) return 0;
+                        if (!a.expiry) return 1;
+                        if (!b.expiry) return -1;
+                        return new Date(a.expiry) - new Date(b.expiry);
+                    default:
+                        return new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
+                }
+            });
+
+            return filtered;
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            const emptyState = document.getElementById('emptyState');
+            
+            if (!grid || !emptyState) return;
+
+            const filteredProducts = getFilteredProducts();
+
+            if (filteredProducts.length === 0) {
+                grid.style.display = 'none';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            const lang = AppState.currentLanguage;
+            
+            grid.innerHTML = filteredProducts.map(product => {
+                const expiryStatus = getExpiryStatus(product.expiry);
+                const stockStatus = getStockStatus(product.stock);
+                const name = product[`name_${lang}`] || product.name_ar;
+                const description = product[`description_${lang}`] || product.description_ar || 
+                                  (lang === 'ar' ? 'لا يوجد وصف' : 'No description available');
+                
+                return `
+                    <div class="product-card" onclick="showProductDetails('${product.id}')">
+                        ${product.image ? 
+                            `<img src="${product.image}" alt="${name}" class="product-image">` :
+                            `<div class="product-placeholder">
+                                <i class="fas fa-pills"></i>
+                            </div>`
+                        }
+                        
+                        <div class="product-info">
+                            <h3 class="product-name">${sanitizeInput(name)}</h3>
+                            <p class="product-description">${sanitizeInput(description)}</p>
+                            
+                            <div class="product-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">${lang === 'ar' ? 'السعر' : 'Price'}</span>
+                                    <span class="meta-value price">${formatPrice(product.price)}</span>
+                                </div>
+                                
+                                <div class="meta-item">
+                                    <span class="meta-label">${lang === 'ar' ? 'المخزون' : 'Stock'}</span>
+                                    <span class="meta-value stock ${stockStatus}">
+                                        ${product.stock || 0}
+                                        ${stockStatus === 'low' ? (lang === 'ar' ? ' (قليل)' : ' (Low)') : ''}
+                                        ${stockStatus === 'out' ? (lang === 'ar' ? ' (منتهي)' : ' (Out)') : ''}
+                                    </span>
+                                </div>
+                                
+                                <div class="meta-item">
+                                    <span class="meta-label">${lang === 'ar' ? 'الصلاحية' : 'Expiry'}</span>
+                                    <span class="meta-value expiry ${expiryStatus}">
+                                        ${formatDate(product.expiry)}
+                                        ${expiryStatus === 'warning' ? (lang === 'ar' ? ' (قريب)' : ' (Soon)') : ''}
+                                        ${expiryStatus === 'expired' ? (lang === 'ar' ? ' (منتهي)' : ' (Expired)') : ''}
+                                    </span>
+                                </div>
+                                
+                                ${product.batchNumber ? `
+                                <div class="meta-item">
+                                    <span class="meta-label">${lang === 'ar' ? 'رقم الدفعة' : 'Batch'}</span>
+                                    <span class="meta-value">${sanitizeInput(product.batchNumber)}</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                            
+                            <div class="product-categories">
+                                ${product.categories.map(catId => 
+                                    `<span class="category-tag">${getCategoryName(catId)}</span>`
+                                ).join('')}
+                            </div>
+                            
+                            ${AppState.isAuthenticated ? `
+                                <div class="product-actions">
+                                    <button class="btn btn-sm btn-secondary" onclick="event.stopPropagation(); editProduct('${product.id}')">
+                                        <i class="fas fa-edit"></i>
+                                        ${lang === 'ar' ? 'تعديل' : 'Edit'}
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" onclick="event.stopPropagation(); deleteProduct('${product.id}')">
+                                        <i class="fas fa-trash"></i>
+                                        ${lang === 'ar' ? 'حذف' : 'Delete'}
+                                    </button>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add fade-in animation
+            setTimeout(() => {
+                grid.querySelectorAll('.product-card').forEach((card, index) => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 50);
+        }
+
+        function showProductDetails(productId) {
+            const product = AppState.products.find(p => p.id === productId);
+            if (!product) return;
+
+            const modal = document.getElementById('productDetailsModal');
+            const title = document.getElementById('productDetailsTitle');
+            const content = document.getElementById('productDetailsContent');
+            
+            if (!modal || !title || !content) return;
+
+            const lang = AppState.currentLanguage;
+            const name = product[`name_${lang}`] || product.name_ar;
+            const description = product[`description_${lang}`] || product.description_ar || 
+                              (lang === 'ar' ? 'لا يوجد وصف متاح' : 'No description available');
+            
+            title.textContent = name;
+            
+            const expiryStatus = getExpiryStatus(product.expiry);
+            const stockStatus = getStockStatus(product.stock);
+
+            content.innerHTML = `
+                <div style="display: grid; gap: 2rem;">
+                    ${product.image ? `
+                        <div style="text-align: center;">
+                            <img src="${product.image}" alt="${name}" 
+                                 style="max-width: 100%; max-height: 400px; border-radius: var(--radius); box-shadow: var(--shadow);">
+                        </div>
+                    ` : ''}
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'الوصف' : 'Description'}</label>
+                            <div class="form-input" style="background: var(--light-color); min-height: 60px;">
+                                ${sanitizeInput(description)}
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'السعر' : 'Price'}</label>
+                            <div class="form-input" style="background: var(--light-color);">
+                                ${formatPrice(product.price)}
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'المخزون' : 'Stock'}</label>
+                            <div class="form-input" style="background: ${stockStatus === 'low' ? 'var(--warning-color)' : stockStatus === 'out' ? 'var(--danger-color)' : 'var(--light-color)'}; color: ${stockStatus !== 'normal' ? 'white' : 'inherit'};">
+                                ${product.stock || 0}
+                                ${stockStatus === 'low' ? (lang === 'ar' ? ' (مخزون منخفض)' : ' (Low Stock)') : ''}
+                                ${stockStatus === 'out' ? (lang === 'ar' ? ' (نفد المخزون)' : ' (Out of Stock)') : ''}
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'تاريخ الصلاحية' : 'Expiry Date'}</label>
+                            <div class="form-input" style="background: ${expiryStatus === 'expired' ? 'var(--danger-color)' : expiryStatus === 'warning' ? 'var(--warning-color)' : 'var(--light-color)'}; color: ${expiryStatus !== 'normal' ? 'white' : 'inherit'};">
+                                ${formatDate(product.expiry)}
+                                ${expiryStatus === 'expired' ? (lang === 'ar' ? ' (منتهي الصلاحية)' : ' (Expired)') : ''}
+                                ${expiryStatus === 'warning' ? (lang === 'ar' ? ' (قارب على الانتهاء)' : ' (Near Expiry)') : ''}
+                            </div>
+                        </div>
+                        
+                        ${product.batchNumber ? `
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'رقم الدفعة' : 'Batch Number'}</label>
+                            <div class="form-input" style="background: var(--light-color);">
+                                ${sanitizeInput(product.batchNumber)}
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    ${product.notes ? `
+                        <div class="form-group">
+                            <label class="form-label">${lang === 'ar' ? 'الملاحظات' : 'Notes'}</label>
+                            <div class="form-input" style="background: var(--light-color); min-height: 60px;">
+                                ${sanitizeInput(product.notes)}
+                            </div>
+                        </div>
+                    ` : ''}
+                    
+                    <div class="form-group">
+                        <label class="form-label">${lang === 'ar' ? 'التصنيفات' : 'Categories'}</label>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            ${product.categories.map(catId => 
+                                `<span class="category-tag">${getCategoryName(catId)}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    
+                    ${AppState.isAuthenticated ? `
+                        <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                            <button class="btn btn-secondary" onclick="closeModal('productDetailsModal'); editProduct('${product.id}')">
+                                <i class="fas fa-edit"></i>
+                                ${lang === 'ar' ? 'تعديل' : 'Edit'}
+                            </button>
+                            <button class="btn btn-danger" onclick="deleteProduct('${product.id}')">
+                                <i class="fas fa-trash"></i>
+                                ${lang === 'ar' ? 'حذف' : 'Delete'}
+                            </button>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+
+            openModal('productDetailsModal');
+        }
+
+        function addProduct() {
+            if (!AppState.isAuthenticated) {
+                showNotification(AppState.currentLanguage === 'ar' ? 'يجب تسجيل الدخول أولاً' : 'Please login first', 'error');
+                return;
+            }
+            
+            AppState.currentProduct = null;
+            document.getElementById('productModalTitle').textContent = 
+                AppState.currentLanguage === 'ar' ? 'إضافة دواء جديد' : 'Add New Medicine';
+            
+            // Reset form
+            document.getElementById('productForm').reset();
+            document.getElementById('imagePreview').style.display = 'none';
+            
+            populateCategoriesCheckboxes();
+            openModal('productModal');
+        }
+
+        function editProduct(productId) {
+            if (!AppState.isAuthenticated) {
+                showNotification(AppState.currentLanguage === 'ar' ? 'يجب تسجيل الدخول أولاً' : 'Please login first', 'error');
+                return;
+            }
+
+            const product = AppState.products.find(p => p.id === productId);
+            if (!product) return;
+
+            AppState.currentProduct = product;
+            document.getElementById('productModalTitle').textContent = 
+                AppState.currentLanguage === 'ar' ? 'تعديل الدواء' : 'Edit Medicine';
+            
+            // Fill form
+            document.getElementById('productName').value = product.name_ar || '';
+            document.getElementById('productNameEn').value = product.name_en || '';
+            document.getElementById('productPrice').value = product.price || '';
+            document.getElementById('productStock').value = product.stock || '';
+            document.getElementById('productExpiry').value = product.expiry || '';
+            document.getElementById('productBatch').value = product.batchNumber || '';
+            document.getElementById('productDescription').value = product.description_ar || '';
+            document.getElementById('productDescriptionEn').value = product.description_en || '';
+            document.getElementById('productNotes').value = product.notes || '';
+            
+            if (product.image) {
+                document.getElementById('imagePreview').src = product.image;
+                document.getElementById('imagePreview').style.display = 'block';
+            } else {
+                document.getElementById('imagePreview').style.display = 'none';
+            }
+
+            populateCategoriesCheckboxes(product.categories);
+            closeModal('productDetailsModal');
+            openModal('productModal');
+        }
+
+        function deleteProduct(productId) {
+            const lang = AppState.currentLanguage;
+            const confirmMessage = lang === 'ar' ? 'هل أنت متأكد من حذف هذا الدواء؟' : 'Are you sure you want to delete this medicine?';
+            
+            if (!confirm(confirmMessage)) return;
+
+            AppState.products = AppState.products.filter(p => p.id !== productId);
+            saveData();
+            renderCategories();
+            renderProducts();
+            updateStats();
+            closeModal('productDetailsModal');
+            
+            const successMessage = lang === 'ar' ? 'تم حذف الدواء بنجاح' : 'Medicine deleted successfully';
+            showNotification(successMessage);
+        }
+
+        function populateCategoriesCheckboxes(selectedCategories = []) {
+            const container = document.getElementById('categoriesCheckboxes');
+            if (!container) return;
+
+            const allCategories = getAllCategories();
+            const lang = AppState.currentLanguage;
+            
+            container.innerHTML = allCategories.map(category => {
+                const name = category[`name_${lang}`] || category.name_ar;
+                const isChecked = selectedCategories.includes(category.id);
+                
+                return `
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="${category.id}" ${isChecked ? 'checked' : ''}>
+                        <span>${name}</span>
+                    </label>
+                `;
+            }).join('');
+        }
+
+        function saveProduct(formData) {
+            const name_ar = formData.get('name_ar');
+            const name_en = formData.get('name_en');
+            const price = formData.get('price');
+            const stock = formData.get('stock');
+            const expiry = formData.get('expiry');
+            const batchNumber = formData.get('batchNumber');
+            const description_ar = formData.get('description_ar');
+            const description_en = formData.get('description_en');
+            const notes = formData.get('notes');
+            const categories = Array.from(document.querySelectorAll('#categoriesCheckboxes input:checked')).map(input => input.value);
+
+            if (!name_ar.trim()) {
+                const errorMessage = AppState.currentLanguage === 'ar' ? 'يجب إدخال اسم الدواء' : 'Medicine name is required';
+                showNotification(errorMessage, 'error');
+                return;
+            }
+
+            const productData = {
+                name_ar: name_ar.trim(),
+                name_en: name_en.trim(),
+                price: price ? parseFloat(price) : null,
+                stock: stock ? parseInt(stock) : 0,
+                expiry: expiry || null,
+                batchNumber: batchNumber.trim(),
+                description_ar: description_ar.trim(),
+                description_en: description_en.trim(),
+                notes: notes.trim(),
+                categories: categories,
+                image: AppState.currentProduct?.image || null
+            };
+
+            if (AppState.currentProduct) {
+                // Update existing product
+                const index = AppState.products.findIndex(p => p.id === AppState.currentProduct.id);
+                if (index !== -1) {
+                    AppState.products[index] = { ...AppState.currentProduct, ...productData };
+                }
+                const successMessage = AppState.currentLanguage === 'ar' ? 'تم تحديث الدواء بنجاح' : 'Medicine updated successfully';
+                showNotification(successMessage);
+            } else {
+                // Add new product
+                productData.id = generateId();
+                productData.createdAt = new Date().toISOString();
+                AppState.products.unshift(productData);
+                const successMessage = AppState.currentLanguage === 'ar' ? 'تم إضافة الدواء بنجاح' : 'Medicine added successfully';
+                showNotification(successMessage);
+            }
+
+            saveData();
+            renderCategories();
+            renderProducts();
+            updateStats();
+            closeModal('productModal');
+        }
+
+        // ============== Search Functions ==============
+        function performSearch(query) {
+            AppState.searchQuery = query;
+            AppState.currentCategory = 'all';
+            renderCategories();
+            renderProducts();
+        }
+
+        function getSearchSuggestions(query) {
+            if (!query || query.length < 2) return [];
+            
+            const suggestions = [];
+            const queryLower = query.toLowerCase();
+            
+            AppState.products.forEach(product => {
+                const lang = AppState.currentLanguage;
+                const name = product[`name_${lang}`] || product.name_ar;
+                const description = product[`description_${lang}`] || product.description_ar || '';
+                
+                if (name.toLowerCase().includes(queryLower) || description.toLowerCase().includes(queryLower)) {
+                    suggestions.push({
+                        name: name,
+                        category: product.categories.map(catId => getCategoryName(catId)).join(', '),
+                        id: product.id
+                    });
+                }
+            });
+            
+            return suggestions.slice(0, 5);
+        }
+
+        function displaySearchSuggestions(suggestions) {
+            const container = document.getElementById('searchSuggestions');
+            if (!container) return;
+
+            if (suggestions.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+
+            container.innerHTML = suggestions.map(item => `
+                <div class="suggestion-item" onclick="selectSuggestion('${item.name}')">
+                    <i class="fas fa-pills" style="color: var(--primary-color);"></i>
+                    <div>
+                        <div style="font-weight: 600;">${sanitizeInput(item.name)}</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">${sanitizeInput(item.category)}</div>
+                    </div>
+                </div>
+            `).join('');
+            
+            container.style.display = 'block';
+        }
+
+        function selectSuggestion(name) {
+            document.getElementById('searchInput').value = name;
+            document.getElementById('searchSuggestions').style.display = 'none';
+            performSearch(name);
+        }
+
+        // ============== Statistics Functions ==============
+        function updateStats() {
+            const totalProducts = AppState.products.length;
+            const lowStockProducts = AppState.products.filter(p => getStockStatus(p.stock) === 'low').length;
+            const nearExpiryProducts = AppState.products.filter(p => getExpiryStatus(p.expiry) === 'warning').length;
+            const activeCategories = getAllCategories().filter(cat => 
+                AppState.products.some(p => p.categories.includes(cat.id))
+            ).length;
+
+            document.getElementById('totalProducts').textContent = totalProducts.toLocaleString();
+            document.getElementById('lowStockProducts').textContent = lowStockProducts.toLocaleString();
+            document.getElementById('nearExpiryProducts').textContent = nearExpiryProducts.toLocaleString();
+            document.getElementById('activeCategories').textContent = activeCategories.toLocaleString();
+        }
+
+        // ============== Data Management ==============
+        function exportData() {
+            const data = {
+                products: AppState.products,
+                settings: AppState.settings,
+                categories: AppState.categories,
+                exportDate: new Date().toISOString(),
+                version: '1.0'
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `zayyat-backup-${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            const successMessage = AppState.currentLanguage === 'ar' ? 'تم تصدير البيانات بنجاح' : 'Data exported successfully';
+            showNotification(successMessage);
+        }
+
+        function importData(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    
+                    if (data.products && Array.isArray(data.products)) {
+                        AppState.products = data.products;
+                    }
+                    
+                    if (data.settings && typeof data.settings === 'object') {
+                        AppState.settings = { ...AppState.settings, ...data.settings };
+                        applySettings();
+                    }
+
+                    saveData();
+                    renderCategories();
+                    renderProducts();
+                    updateStats();
+                    closeModal('dataModal');
+                    
+                    const successMessage = AppState.currentLanguage === 'ar' ? 'تم استيراد البيانات بنجاح' : 'Data imported successfully';
+                    showNotification(successMessage);
+                } catch (error) {
+                    console.error('Import error:', error);
+                    const errorMessage = AppState.currentLanguage === 'ar' ? 'خطأ في ملف البيانات' : 'Invalid data file';
+                    showNotification(errorMessage, 'error');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function createSampleData() {
+            const lang = AppState.currentLanguage;
+            const confirmMessage = lang === 'ar' ? 'هل تريد إنشاء بيانات تجريبية؟ سيتم إضافة منتجات مثال للموقع.' : 
+                                 'Do you want to create sample data? Example products will be added to the site.';
+            
+            if (!confirm(confirmMessage)) return;
+
+            const sampleProducts = [
+                {
+                    id: generateId(),
+                    name_ar: 'تايلوزين 10%',
+                    name_en: 'Tylosin 10%',
+                    price: 250,
+                    stock: 120,
+                    expiry: '2026-02-15',
+                    batchNumber: 'TY001-2024',
+                    description_ar: 'مضاد حيوي مسحوق قابل للذوبان في الماء لعلاج الالتهابات البكتيرية في الدواجن',
+                    description_en: 'Water-soluble antibiotic powder for treating bacterial infections in poultry',
+                    notes: 'يُستخدم تحت إشراف بيطري',
+                    categories: ['tylosin', 'growth-promoter'],
+                    image: null,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: generateId(),
+                    name_ar: 'فيتامينات مركبة',
+                    name_en: 'Multi-Vitamins',
+                    price: 180,
+                    stock: 60,
+                    expiry: '2025-11-01',
+                    batchNumber: 'VIT001-2024',
+                    description_ar: 'محلول فيتامينات مركب يحتوي على جميع الفيتامينات الأساسية للدواجن',
+                    description_en: 'Multi-vitamin solution containing all essential vitamins for poultry',
+                    notes: 'يُضاف إلى ماء الشرب',
+                    categories: ['vitamins'],
+                    image: null,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: generateId(),
+                    name_ar: 'دوكسيكلين 20%',
+                    name_en: 'Doxycycline 20%',
+                    price: 200,
+                    stock: 8,
+                    expiry: '2025-10-01',
+                    batchNumber: 'DOX001-2024',
+                    description_ar: 'مضاد حيوي واسع المجال لعلاج العدوى البكتيرية',
+                    description_en: 'Broad-spectrum antibiotic for treating bacterial infections',
+                    notes: 'مخزون منخفض - يحتاج تجديد',
+                    categories: ['doxycycline'],
+                    image: null,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: generateId(),
+                    name_ar: 'رافعات مناعة بلس',
+                    name_en: 'Immune Booster Plus',
+                    price: 220,
+                    stock: 35,
+                    expiry: '2026-01-20',
+                    batchNumber: 'IMM001-2024',
+                    description_ar: 'مكمل غذائي لتقوية جهاز المناعة في الدواجن',
+                    description_en: 'Nutritional supplement to strengthen the immune system in poultry',
+                    notes: 'يُستخدم في فترات الإجهاد',
+                    categories: ['immune-booster'],
+                    image: null,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: generateId(),
+                    name_ar: 'كوكسيديا محلول',
+                    name_en: 'Coccidiosis Solution',
+                    price: 190,
+                    stock: 15,
+                    expiry: '2025-08-15',
+                    batchNumber: 'COC001-2024',
+                    description_ar: 'علاج فعال ضد الكوكسيديا في الدواجن',
+                    description_en: 'Effective treatment against coccidiosis in poultry',
+                    notes: 'يُستخدم للوقاية والعلاج',
+                    categories: ['coccidiosis'],
+                    image: null,
+                    createdAt: new Date().toISOString()
+                }
+            ];
+
+            AppState.products = [...sampleProducts, ...AppState.products];
+            saveData();
+            renderCategories();
+            renderProducts();
+            updateStats();
+            closeModal('dataModal');
+            
+            const successMessage = lang === 'ar' ? 'تم إنشاء البيانات التجريبية بنجاح' : 'Sample data created successfully';
+            showNotification(successMessage);
+        }
+
+        function resetData() {
+            const lang = AppState.currentLanguage;
+            const confirmMessage = lang === 'ar' ? 'هل أنت متأكد من حذف جميع البيانات؟ هذا الإجراء لا يمكن التراجع عنه.' : 
+                                 'Are you sure you want to delete all data? This action cannot be undone.';
+            
+            if (!confirm(confirmMessage)) return;
+
+            AppState.products = [];
+            AppState.settings = {
+                adminPassword: 'admin123',
+                lowStockThreshold: 10,
+                nearExpiryDays: 30,
+                primaryColor: '#2563eb',
+                secondaryColor: '#16a34a'
+            };
+            
+            saveData();
+            applySettings();
+            renderCategories();
+            renderProducts();
+            updateStats();
+            closeModal('dataModal');
+            
+            const successMessage = lang === 'ar' ? 'تم حذف جميع البيانات' : 'All data has been deleted';
+            showNotification(successMessage);
+        }
+
+        // ============== Settings Functions ==============
+        function saveSettings(formData) {
+            const newPassword = formData.get('adminPassword');
+            const lowStockThreshold = formData.get('lowStockThreshold');
+            const nearExpiryDays = formData.get('nearExpiryDays');
+            const primaryColor = formData.get('primaryColor');
+            const secondaryColor = formData.get('secondaryColor');
+
+            if (newPassword) {
+                AppState.settings.adminPassword = newPassword;
+            }
+
+            AppState.settings.lowStockThreshold = parseInt(lowStockThreshold) || 10;
+            AppState.settings.nearExpiryDays = parseInt(nearExpiryDays) || 30;
+            AppState.settings.primaryColor = primaryColor;
+            AppState.settings.secondaryColor = secondaryColor;
+
+            applySettings();
+            saveData();
+            renderProducts(); // Re-render to apply new thresholds
+            updateStats();
+            closeModal('settingsModal');
+            
+            const successMessage = AppState.currentLanguage === 'ar' ? 'تم حفظ الإعدادات بنجاح' : 'Settings saved successfully';
+            showNotification(successMessage);
+        }
+
+        // ============== Reports Functions ==============
+        function showReports() {
+            const content = document.getElementById('reportsContent');
+            if (!content) return;
+
+            const lang = AppState.currentLanguage;
+            const totalProducts = AppState.products.length;
+            const totalValue = AppState.products.reduce((sum, p) => sum + ((p.price || 0) * (p.stock || 0)), 0);
+            
+            // Category breakdown
+            const categoryStats = {};
+            getAllCategories().forEach(cat => {
+                const products = AppState.products.filter(p => p.categories.includes(cat.id));
+                const name = cat[`name_${lang}`] || cat.name_ar;
+                categoryStats[name] = {
+                    count: products.length,
+                    value: products.reduce((sum, p) => sum + ((p.price || 0) * (p.stock || 0)), 0)
+                };
+            });
+
+            // Stock alerts
+            const lowStockProducts = AppState.products.filter(p => getStockStatus(p.stock) === 'low');
+            const outOfStockProducts = AppState.products.filter(p => getStockStatus(p.stock) === 'out');
+            const nearExpiryProducts = AppState.products.filter(p => getExpiryStatus(p.expiry) === 'warning');
+            const expiredProducts = AppState.products.filter(p => getExpiryStatus(p.expiry) === 'expired');
+
+            content.innerHTML = `
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--primary-color);">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--primary-color);">
+                            ${totalProducts.toLocaleString()}
+                        </div>
+                        <div class="stat-label">${lang === 'ar' ? 'إجمالي المنتجات' : 'Total Products'}</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--success-color);">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--success-color);">
+                            ${totalValue.toLocaleString()} ${lang === 'ar' ? 'ر.س' : 'SAR'}
+                        </div>
+                        <div class="stat-label">${lang === 'ar' ? 'إجمالي قيمة المخزون' : 'Total Inventory Value'}</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--warning-color);">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--warning-color);">
+                            ${lowStockProducts.length.toLocaleString()}
+                        </div>
+                        <div class="stat-label">${lang === 'ar' ? 'منتجات منخفضة المخزون' : 'Low Stock Products'}</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color: var(--danger-color);">
+                            <i class="fas fa-calendar-times"></i>
+                        </div>
+                        <div class="stat-number" style="color: var(--danger-color);">
+                            ${nearExpiryProducts.length.toLocaleString()}
+                        </div>
+                        <div class="stat-label">${lang === 'ar' ? 'منتجات قريبة الانتهاء' : 'Near Expiry Products'}</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h4>${lang === 'ar' ? 'توزيع المنتجات حسب التصنيف' : 'Products Distribution by Category'}</h4>
+                    <div class="categories-grid">
+                        ${Object.entries(categoryStats).map(([name, stats]) => `
+                            <div class="category-card">
+                                <div class="category-name">${name}</div>
+                                <div class="category-count">${stats.count} ${lang === 'ar' ? 'منتج' : 'products'}</div>
+                                <div class="category-count">${stats.value.toFixed(2)} ${lang === 'ar' ? 'ر.س' : 'SAR'}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                ${lowStockProducts.length > 0 ? `
+                <div style="margin-top: 2rem;">
+                    <h4 style="color: var(--warning-color);">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        ${lang === 'ar' ? 'تنبيهات المخزون المنخفض' : 'Low Stock Alerts'}
+                    </h4>
+                    <div class="products-grid">
+                        ${lowStockProducts.slice(0, 6).map(product => {
+                            const name = product[`name_${lang}`] || product.name_ar;
+                            return `
+                                <div class="product-card">
+                                    <div class="product-info">
+                                        <h3 class="product-name">${sanitizeInput(name)}</h3>
+                                        <div class="meta-value stock low">
+                                            ${lang === 'ar' ? 'المخزون:' : 'Stock:'} ${product.stock || 0}
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+                ` : ''}
+
+                ${nearExpiryProducts.length > 0 ? `
+                <div style="margin-top: 2rem;">
+                    <h4 style="color: var(--danger-color);">
+                        <i class="fas fa-calendar-times"></i>
+                        ${lang === 'ar' ? 'تنبيهات قرب انتهاء الصلاحية' : 'Near Expiry Alerts'}
+                    </h4>
+                    <div class="products-grid">
+                        ${nearExpiryProducts.slice(0, 6).map(product => {
+                            const name = product[`name_${lang}`] || product.name_ar;
+                            return `
+                                <div class="product-card">
+                                    <div class="product-info">
+                                        <h3 class="product-name">${sanitizeInput(name)}</h3>
+                                        <div class="meta-value expiry warning">
+                                            ${lang === 'ar' ? 'الصلاحية:' : 'Expiry:'} ${formatDate(product.expiry)}
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            `;
+
+            openModal('reportsModal');
+        }
+
+        // ============== Image Upload ==============
+        function handleImageUpload(file) {
+            if (!file) return;
+
+            if (!file.type.startsWith('image/')) {
+                const errorMessage = AppState.currentLanguage === 'ar' ? 
+                    'يرجى اختيار ملف صورة صالح' : 'Please select a valid image file';
+                showNotification(errorMessage, 'error');
+                return;
+            }
+
+            if (file.size > 5 * 1024 * 1024) { // 5MB limit
+                const errorMessage = AppState.currentLanguage === 'ar' ? 
+                    'حجم الصورة كبير جداً. الحد الأقصى 5 ميجابايت' : 'Image size is too large. Maximum 5MB allowed';
+                showNotification(errorMessage, 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById('imagePreview');
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+                
+                if (AppState.currentProduct) {
+                    AppState.currentProduct.image = e.target.result;
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // ============== Event Listeners Setup ==============
+        function setupEventListeners() {
+            // Current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Language selector
+            document.getElementById('languageSelect').addEventListener('change', function() {
+                setLanguage(this.value);
+            });
+
+            // Theme toggle
+            document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+
+            // Admin button
+            document.getElementById('adminBtn').addEventListener('click', function() {
+                if (AppState.isAuthenticated) {
+                    showAdminPanel();
+                } else {
+                    openModal('loginModal');
+                }
+            });
+
+            // Search functionality
+            let searchTimeout;
+            const searchInput = document.getElementById('searchInput');
+            const searchSuggestions = document.getElementById('searchSuggestions');
+
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                const query = this.value.trim();
+                
+                if (query.length < 2) {
+                    searchSuggestions.style.display = 'none';
+                    if (query.length === 0) {
+                        performSearch('');
+                    }
+                    return;
+                }
+                
+                searchTimeout = setTimeout(() => {
+                    const suggestions = getSearchSuggestions(query);
+                    displaySearchSuggestions(suggestions);
+                }, 300);
+            });
+
+            searchInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    performSearch(this.value.trim());
+                    searchSuggestions.style.display = 'none';
+                }
+            });
+
+            // Close suggestions when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+                    searchSuggestions.style.display = 'none';
+                }
+            });
+
+            // Category and sort filters
+            document.getElementById('categoryFilter').addEventListener('change', function() {
+                filterByCategory(this.value);
+            });
+
+            document.getElementById('sortSelect').addEventListener('change', function() {
+                AppState.sortBy = this.value;
+                renderProducts();
+            });
+
+            // Login form
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = document.getElementById('loginUsername').value;
+                const password = document.getElementById('loginPassword').value;
+                login(username, password);
+            });
+
+            // Product form
+            document.getElementById('productForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData();
+                formData.append('name_ar', document.getElementById('productName').value);
+                formData.append('name_en', document.getElementById('productNameEn').value);
+                formData.append('price', document.getElementById('productPrice').value);
+                formData.append('stock', document.getElementById('productStock').value);
+                formData.append('expiry', document.getElementById('productExpiry').value);
+                formData.append('batchNumber', document.getElementById('productBatch').value);
+                formData.append('description_ar', document.getElementById('productDescription').value);
+                formData.append('description_en', document.getElementById('productDescriptionEn').value);
+                formData.append('notes', document.getElementById('productNotes').value);
+                saveProduct(formData);
+            });
+
+            // Settings form
+            document.getElementById('settingsForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                saveSettings(formData);
+            });
+
+            // Image upload
+            const imageUpload = document.getElementById('imageUpload');
+            const imageInput = document.getElementById('productImage');
+
+            imageUpload.addEventListener('click', () => imageInput.click());
+            imageUpload.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.classList.add('dragover');
+            });
+            imageUpload.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                this.classList.remove('dragover');
+            });
+            imageUpload.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    handleImageUpload(files[0]);
+                }
+            });
+
+            imageInput.addEventListener('change', function() {
+                if (this.files.length > 0) {
+                    handleImageUpload(this.files[0]);
+                }
+            });
+
+            // Admin panel buttons
+            document.getElementById('addProductBtn').addEventListener('click', addProduct);
+            document.getElementById('manageDataBtn').addEventListener('click', () => openModal('dataModal'));
+            document.getElementById('reportsBtn').addEventListener('click', showReports);
+            document.getElementById('settingsBtn').addEventListener('click', function() {
+                // Populate settings form
+                document.getElementById('lowStockThreshold').value = AppState.settings.lowStockThreshold;
+                document.getElementById('nearExpiryDays').value = AppState.settings.nearExpiryDays;
+                document.getElementById('primaryColor').value = AppState.settings.primaryColor;
+                document.getElementById('secondaryColor').value = AppState.settings.secondaryColor;
+                openModal('settingsModal');
+            });
+            document.getElementById('logoutBtn').addEventListener('click', logout);
+
+            // Close modals when clicking outside
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Escape to close modals
+                if (e.key === 'Escape') {
+                    const activeModal = document.querySelector('.modal.active');
+                    if (activeModal) {
+                        activeModal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+                
+                // Ctrl/Cmd + K to focus search
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+            });
+        }
+
+        // ============== Initialize Application ==============
+        function initializeApp() {
+            // Load saved data
+            loadData();
+            
+            // Setup event listeners
+            setupEventListeners();
+            
+            // Initial render
+            renderCategories();
+            renderProducts();
+            updateStats();
+            
+            // Set initial language
+            setLanguage(AppState.currentLanguage);
+            
+            // Apply settings
+            applySettings();
+            
+            // Add fade-in animation to main elements
+            setTimeout(() => {
+                document.querySelectorAll('.stats-section, .categories-section, .products-section').forEach((el, index) => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }, 100);
+            
+            console.log('🐔 شركة الزيات للإنتاج الداجني - الموقع جاهز');
+            
+            // Show welcome message for first-time visitors
+            if (AppState.products.length === 0 && !localStorage.getItem('zayyat_welcomed')) {
+                setTimeout(() => {
+                    const lang = AppState.currentLanguage;
+                    const welcomeMessage = lang === 'ar' ? 
+                        'مرحباً بك في موقع شركة الزيات! يمكنك البدء بإنشاء بيانات تجريبية من قسم إدارة البيانات.' :
+                        'Welcome to Al-Zayyat Company! You can start by creating sample data from the Data Management section.';
+                    showNotification(welcomeMessage, 'info');
+                    localStorage.setItem('zayyat_welcomed', 'true');
+                }, 2000);
+            }
+        }
+
+        // Make functions globally available
+        window.filterByCategory = filterByCategory;
+        window.showProductDetails = showProductDetails;
+        window.editProduct = editProduct;
+        window.deleteProduct = deleteProduct;
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+        window.exportData = exportData;
+        window.importData = importData;
+        window.createSampleData = createSampleData;
+        window.resetData = resetData;
+        window.selectSuggestion = selectSuggestion;
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeApp);
+        } else {
+            initializeApp();
+        }
+    </script>
+</body>
+</html>
